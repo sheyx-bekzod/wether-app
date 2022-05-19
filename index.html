@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: url('https://img.fonwall.ru/o/ua/more-bereg-zakat-skaly.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      padding: 0;
+      margin: 0;
+    }
+    .clouds {
+      background: url('https://cdn.britannica.com/86/7586-050-BFECD57F/layer-undulatus-clouds-altocumulus-perlucidus-rolls-spaces.jpg');
+       background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      padding: 0;
+      margin: 0;;
+      
+    }
+    .rain {
+      background: url('https://media.istockphoto.com/photos/transparent-umbrella-under-rain-against-water-drops-splash-background-picture-id1257951336?b=1&k=20&m=1257951336&s=170667a&w=0&h=N_dkdVEznSiN43vNpVzjnnk8xUi4lg1IFK19JXxo5Zg=');
+      background-size: cover;
+
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+
+    .clear {
+      background: url('https://media.istockphoto.com/photos/blue-sky-with-bright-sun-and-clouds-picture-id1007768414?b=1&k=20&m=1007768414&s=170667a&w=0&h=9ijRGKZYLQJz5GO0ZwisNhraxPRY3wUFWe2wjCfS-Uc=');
+      background-size: cover;
+    }
+
+    .box input {
+      width: 250px;
+      height: 28px;
+      font-size: 20px;
+      outline: none;
+      border: none;
+      box-shadow: 2px 5px 6px 7px #3334;
+    }
+
+    .box input:focus{
+      border: 2px solid red;
+      border-radius: 15px 0 15px 0;
+      background-color: #fff;
+      color: #555;
+    }
+
+    .info {
+      display: flex;
+      margin-top: 20px;
+      
+    }
+
+    .info p{
+      margin-left:  20px;
+      color: #fff;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .content_header {
+      color: #fff;
+      font-size: 25px;
+    }
+
+    span {
+      font-size: 25px;
+    }
+
+    .temp {
+      font-size: 85px;
+      font-weight: 900;
+      color: #fff;
+      
+    }
+
+    .none {
+      display: none;
+    }
+
+    .msg {
+      text-align: center;
+      color: #fff;
+    }
+    
+
+</style>
+</head>
+<body>
+
+    <div class="box">
+      <input type="text" placeholder="Search..." class="search">
+    </div>
+    <div class="wrapper">
+      <div class="content">
+        <h2 class="content_header">
+        </h2>
+        <p class='temp'></p>
+        <div class="info">
+          <p class='max-temp'></p>
+          <p class='min-temp'></p>
+          <p class="type"></p>
+        </div>
+      </div>
+  </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
